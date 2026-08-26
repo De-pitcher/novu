@@ -13,6 +13,7 @@ import {
   telegramConfig,
   webexMessagingConfig,
   whatsAppBusinessConfig,
+  xquikConfig,
 } from '../credentials';
 import { IConfigCredential, IProviderConfig } from '../provider.interface';
 
@@ -158,5 +159,13 @@ export const chatProviders: IProviderConfig[] = [
     credentials: novuAgentChatConfig,
     docReference: `https://docs.novu.co/agents/channels/agent-chat${UTM_CAMPAIGN_QUERY_PARAM}`,
     logoFileName: { light: 'novu-agent-chat.svg', dark: 'novu-agent-chat.svg' },
+  },
+  {
+    id: ChatProviderIdEnum.Xquik,
+    displayName: 'Xquik',
+    channel: ChannelTypeEnum.CHAT,
+    credentials: xquikConfig,
+    docReference: 'https://xquik.com',
+    logoFileName: { light: 'xquik.svg', dark: 'xquik.svg' },
   },
 ];

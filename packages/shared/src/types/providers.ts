@@ -162,6 +162,7 @@ export enum ChatProviderIdEnum {
   Telegram = 'telegram',
   Sendblue = 'sendblue',
   NovuAgentChat = 'novu-agent-chat',
+  Xquik = 'xquik',
 }
 
 export enum PushProviderIdEnum {

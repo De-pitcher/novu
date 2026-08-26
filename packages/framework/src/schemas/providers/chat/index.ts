@@ -19,6 +19,7 @@ export const chatProviderSchemas = {
   slack: slackProviderSchemas,
   'webex-messaging': genericProviderSchemas,
   'whatsapp-business': genericProviderSchemas,
+  xquik: genericProviderSchemas,
   zulip: genericProviderSchemas,
   telegram: genericProviderSchemas,
 } as const satisfies Record<ChatProviderIdEnum, { output: JsonSchema }>;

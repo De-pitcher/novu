@@ -1036,6 +1036,16 @@ export const emailWebhookConfig: IConfigCredential[] = [
   ...mailConfigBase,
 ];
 
+export const xquikConfig: IConfigCredential[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API Key',
+    description: 'Xquik API key used to authenticate direct-message requests (sent as a Bearer token)',
+    type: 'string',
+    required: true,
+  },
+];
+
 export const africasTalkingConfig: IConfigCredential[] = [
   {
     key: CredentialsKeyEnum.ApiKey,

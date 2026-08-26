@@ -14,6 +14,7 @@ import { SlackHandler } from './handlers/slack.handler';
 import { TelegramHandler } from './handlers/telegram.handler';
 import { WebexMessagingHandler } from './handlers/webex-messaging.handler';
 import { WhatsAppBusinessHandler } from './handlers/whatsapp-business.handler';
+import { XquikHandler } from './handlers/xquik.handler';
 import { ZulipHandler } from './handlers/zulip.handler';
 import { IChatFactory, IChatHandler } from './interfaces';
 
@@ -35,6 +36,7 @@ export class ChatFactory implements IChatFactory {
     new TelegramHandler(),
     new WebexMessagingHandler(),
     new SendblueHandler(),
+    new XquikHandler(),
   ];
 
   getHandler(integration: Pick<IntegrationEntity, 'credentials' | 'channel' | 'providerId' | 'configurations'>) {

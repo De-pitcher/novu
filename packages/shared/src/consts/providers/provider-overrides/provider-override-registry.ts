@@ -137,6 +137,7 @@ const CHAT_PROVIDER_OVERRIDE_CONFIGS = {
   [ChatProviderIdEnum.Mattermost]: escapeHatch('text'),
   [ChatProviderIdEnum.Ryver]: escapeHatch('content'),
   [ChatProviderIdEnum.Zulip]: escapeHatch('text'),
+  [ChatProviderIdEnum.Xquik]: escapeHatch('text'),
   [ChatProviderIdEnum.GrafanaOnCall]: escapeHatch('message'),
   [ChatProviderIdEnum.GetStream]: escapeHatch('text'),
   [ChatProviderIdEnum.RocketChat]: escapeHatch('message.msg'),
